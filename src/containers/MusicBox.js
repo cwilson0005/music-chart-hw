@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import MusicList from "../components/MusicList"
 
 class MusicBox extends Component {
   constructor(props){
@@ -28,7 +29,7 @@ class MusicBox extends Component {
     return (
       <div>
         <h2>The Music Box</h2>
-        <MusicList />
+        <MusicList topSongs={this.state.topSongs}/>
       </div>
     );
   }

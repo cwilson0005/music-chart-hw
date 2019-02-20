@@ -29,7 +29,7 @@ class MusicBox extends Component {
     return (
       <div>
         <h2>The Music Box</h2>
-        <MusicList topSongs={this.state.topSongs}/>
+        <MusicList topSongs={this.state.topSongs} />
       </div>
     );
   }

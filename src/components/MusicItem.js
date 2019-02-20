@@ -1,10 +1,14 @@
 import React from "react";
 
 const MusicItem = (props) => {
-  console.log(props.topSongs);
+
+  if (!props.title){
+    return null;
+  }
+
   return(
     <div className="music-item">
-      
+      {props.title.label}
     </div>
   )
 }
